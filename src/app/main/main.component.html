@@ -1,0 +1,31 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="bg-translucido">
+        <div class="container">
+            <p class="lead">Descrube más que una ciudad</p>
+            <h1 class="display-4">Descubre toKnow</h1>
+            <!-- <a href="#" type="button" class="btn btn-light">TAKE A LOOK</a> -->
+            <input class="ciudad" type="text" name="city" placeholder="¿Que ciudad vas a conocer?">
+            <br>
+            <!-- <div class="ui right action left icon input">
+                <i class="search icon"></i>
+                <input type="text" placeholder="¿Cómo la quieres conocer?">
+                <div class="ui basic floating dropdown button">
+                  <div class="text">A pie</div>
+                  <i class="dropdown icon"></i>
+                  <div class="menu">
+                    <div class="item">En Segway</div>
+                    <div class="item">En Tuk-tuk</div>
+                  </div>
+                </div>
+              </div> -->
+            <select class="como" name="how" id="">
+                <option value="como" selected>¿Cómo la quieres concocer?</option>
+                <option value="apie">A pie</option>
+                <option value="segway">Segway</option>
+                <option value="tuktuk">Tuk-Tuk</option>
+            </select>
+            <br>
+            <button class="buscar" name="vamos"><a [routerLink]="['/resultado-busqueda']">Vamos!</a></button>
+        </div>
+    </div>
+</div>

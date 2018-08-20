@@ -1,0 +1,143 @@
+.bg-dark{
+    background-color: #44344F !important;
+}
+.bg-light{
+    background-color: #eee !important;
+}
+
+.jumbotron{
+    padding: 0px;
+    background-image: url(../../assets/madrid.jpg);
+    margin-bottom:0;
+    height: 850px;
+    background-size: cover;
+    color:white;
+    text-align: left;
+
+}
+
+.jumbotron .lead{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 200px;
+}
+.jumbotron h1{
+    font-family: 'Montserrat', sans-serif;
+
+}
+.bg-translucido{
+    background-color: rgba(0, 0, 0, 0.4);
+    width:100%;
+    height: 100%;
+}
+
+
+/* .btn{
+    border-radius: 0;
+} */
+.ciudad{
+    width: 300px;
+    height: 40px;
+    border: none;
+    margin:2px; 
+    font-family: 'Montserrat', sans-serif;
+
+}
+.como{
+    width: 300px;
+    height: 40px;
+    border: none;
+    margin:2px; 
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+.buscar{
+    width:300px;
+    height: 40px;
+    border: none;
+    margin:2px; 
+    background-color: #D3FCD5;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+section h2{
+    font-weight:bold;
+}
+
+
+
+.lineatitulo{
+    border-color: black;
+    width: 80px;
+}
+
+main section{
+    padding: 0px 0px;
+}
+main .card {
+    border: 0px;
+    border-radius: .0rem;
+}
+main .card-img-top{
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.card-title{
+    font-weight: bold;
+}
+.card-footer{
+    background-color: transparent;
+    border-top:0px;
+    color:black !important;
+    font-size: 120%;
+}
+
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+
+.texto{
+    color: black;
+
+}
+#ourstory{
+    padding: 30px 0px;
+}
+
+
+input::placeholder{
+    font-weight: bold;
+    color:lightgray !important;
+}
+
+.form-control{
+    border:0px;
+    border-bottom: 1px solid lightgray;
+}
+
+.form-group textarea{
+    border: 1px solid lightgray;
+}
+.form-group label{
+    font-weight: bold;
+    padding: 12px;
+    color: lightgray;
+}
+
+
+.btn-secondary{
+    background-color: lightgray;
+}
+.rss{
+    margin: 0 auto;
+    max-width: 30%;
+}
+@media (max-width:767.98px){
+    .texto h5{
+        text-align: center;
+        padding: 20px 0px;
+    }
+}
