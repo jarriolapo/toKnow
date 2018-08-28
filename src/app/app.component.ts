@@ -1,10 +1,19 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router'
+
+
 
 @Component({
+
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  // template: `<a (click)="goToPage('registroguia')">Conviértete en</a>`
 })
 export class AppComponent {
-  title = 'toKnow';
+  constructor(private router: Router) { }
+  goToPage(path) {
+    this.router.navigate([path])
+  }
+  
 }

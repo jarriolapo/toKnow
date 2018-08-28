@@ -1,4 +1,4 @@
-<div class="ui items" *ngFor="let t of toursroutes">
+<!-- <div class="ui items" *ngFor="let t of toursroutes">
   <div class="item">
     <div class="image">
       <img src="/images/wireframe/image.png">
@@ -16,6 +16,57 @@
       </div>
     </div>
   </div>
+</div> -->
+<!---ESTA SI FUNCIONA  
+
+  <div class="card bg-dark text-white" *ngFor="let t of toursroutes" (click)="navegarADetalle(esc)">
+    <br>
+    <img class="card-img" [src]="t.photo" alt="Card image">
+   
+    <div class="card-img-overlay">
+      <h5 class="card-title">{{t.rute}}</h5>
+      <p class="card-text">{{t.description}} </p>
+      <p class="card-text">Last updated 3 mins ago</p>
+    </div>
+    <br>
+  </div>
+-------->
+<!-- CARD BUENA PERO MUY LARGA -->
+  <!-- <div class="card" style="width: 18rem; "*ngFor="let t of toursroutes" (click)="navegarADetalle(esc)">
+    <img class="card-img-top" [src]="t.photo" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{t.rute}}</h5>
+      <p class="card-text">{{t.description}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div> -->
+ 
+
+  <!-- AQUI OTRA CARD -->
+  <div class="card" style="width: 18rem;" *ngFor="let t of toursroutes" (click)="navegarADetalle(tour)">
+    <img class="card-img-top" [src]="t.photo" alt="Card image cap" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{t.rute}}</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
   <!-- <div class="item">
     <div class="image">
       <img src="/images/wireframe/image.png">
@@ -33,4 +84,3 @@
       </div>
     </div>
   </div> -->
-</div>

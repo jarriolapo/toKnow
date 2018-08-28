@@ -1,19 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { ToursroutesService } from '../toursroutes.service';
-import { Router } from '@angular/router';
-
 
 
 @Component({
-  selector: 'app-resultado-busqueda',
-  templateUrl: './resultado-busqueda.component.html',
-  styleUrls: ['./resultado-busqueda.component.css']
+  selector: 'app-listatours',
+  templateUrl: './listatours.component.html',
+  styleUrls: ['./listatours.component.css']
 })
 export class ResultadoBusquedaComponent implements OnInit {
 
   toursroutes: any[]
 
-  constructor(private toursroutesService: ToursroutesService, private router: Router) { }
+  constructor(private toursroutesService: ToursroutesService) { }
 
   ngOnInit() {
     this.toursroutesService.getAllToursroutes()
@@ -21,12 +19,6 @@ export class ResultadoBusquedaComponent implements OnInit {
         this.toursroutes = response.json()
         console.log(this.toursroutes)
     })
-  }
-
-  navegarADetalle(tour) {
-    this.router.navigate(['/fichatour', tour.id])
-    console.log(this.router)
-
   }
 
 }

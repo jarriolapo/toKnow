@@ -7,9 +7,7 @@ import { Http, RequestOptions, Headers } from '@angular/http';
   
 export class ToursroutesService {
 
-
     baseUrl: string
-  
   
     constructor(private http: Http) {
         this.baseUrl = 'https://toknow-ec9ef.firebaseio.com/toursRoutes.json'
@@ -20,11 +18,16 @@ export class ToursroutesService {
         // this.http.get(url).subscribe((response) => {
         // console.log(response.json().results)
         //})
-    
         // Lo convirto a promesa
         return this.http.get(url).toPromise()
     }
-    getToursroutesFromUrl(pUrl) {
-        return this.http.get(pUrl).toPromise()
+    // getToursroutesFromUrl(pUrl) {
+    //     return this.http.get(pUrl).toPromise()
+    // }
+
+    getTourById(id) {
+        
     }
+
+    
 }

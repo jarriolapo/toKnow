@@ -13,10 +13,9 @@
           <!-- <a class="nav-item nav-link active" href="#">Home
             <span class="sr-only">(current)</span>
           </a> -->
-          <a class="nav-item nav-link" href="#">Conviértete en guía</a>
-
-          <a class="nav-item nav-link" href="#">Regístrate</a>
-          <a class="nav-item nav-link" href="#">Inicia sesión</a>
+          <a class="nav-item nav-link" href="#" [routerLink]="['registroguia']">Conviértete en guía</a>
+          <a class="nav-item nav-link" href="#" [routerLink]="['registroturista']">Regístrate</a>
+          <a class="nav-item nav-link" href="#" [routerLink]="['iniciar']">Inicia sesión</a>
           <!-- <a class="nav-item nav-link" href="#">Contact</a> -->
         </div>
       </div>
@@ -64,3 +63,15 @@
     </ul>
   </div>
 </footer>
+<!-- <modal id="custom-modal-1">
+  <div class="modal">
+      <div class="modal-body">
+          <h1>A Custom Modal!</h1>
+          <p>
+              Home page text: <input type="text" [(ngModel)]="bodyText" />
+          </p>
+          <button (click)="closeModal('custom-modal-1');">Close</button>
+      </div>
+  </div>
+  <div class="modal-background"></div>
+</modal> -->
