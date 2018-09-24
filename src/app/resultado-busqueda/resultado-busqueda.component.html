@@ -1,86 +1,37 @@
-<!-- <div class="ui items" *ngFor="let t of toursroutes">
-  <div class="item">
-    <div class="image">
-      <img src="/images/wireframe/image.png">
-    </div>
-    <div class="content">
-      <a class="header">{{t.rute}}</a>
-      <div class="meta">
-        <span>Description</span>
-      </div>
-      <div class="description">
-        <p> {{t.description}} </p>
-      </div>
-      <div class="extra">
-        Additional Details
-      </div>
-    </div>
-  </div>
-</div> -->
-<!---ESTA SI FUNCIONA  
 
-  <div class="card bg-dark text-white" *ngFor="let t of toursroutes" (click)="navegarADetalle(esc)">
-    <br>
-    <img class="card-img" [src]="t.photo" alt="Card image">
-   
-    <div class="card-img-overlay">
-      <h5 class="card-title">{{t.rute}}</h5>
-      <p class="card-text">{{t.description}} </p>
-      <p class="card-text">Last updated 3 mins ago</p>
-    </div>
-    <br>
-  </div>
--------->
-<!-- CARD BUENA PERO MUY LARGA -->
-  <!-- <div class="card" style="width: 18rem; "*ngFor="let t of toursroutes" (click)="navegarADetalle(esc)">
-    <img class="card-img-top" [src]="t.photo" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{t.rute}}</h5>
-      <p class="card-text">{{t.description}}</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Cras justo odio</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      <li class="list-group-item">Vestibulum at eros</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
-    </div>
-  </div> -->
- 
 
   <!-- AQUI OTRA CARD -->
-  <div class="card" style="width: 18rem;" *ngFor="let t of toursroutes" (click)="navegarADetalle(tour)">
-    <img class="card-img-top" [src]="t.photo" alt="Card image cap" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{t.rute}}</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- BREADCRUM -->
+<br>
+<br>
+<br>
+  <div class="justify-content-center align-items-center  ">
+    <div class="container">
+      <div class="ui mini breadcrumb">
+          <a class="section">Home</a>
+          <i class="right chevron icon divider"></i>
+          <a class="active section">Busqueda</a>
+          <!-- <i class="right chevron icon divider"></i>
+          <div class="active section">Ciudad</div> -->
+        </div>
+    <div class="col-12 mt-4 mb-4" *ngIf="toursroutes?.length > 0">
+        <h1>Follow your host en {{toursroutes[0].ciudad}}</h1>
     </div>
+    <div class="col-12 mt-0 mb-0">
+      <div  class="d-inline-block card ml-2 mr-2 mt-2 mb-2 align-top" 
+            style="width: 24rem;" 
+            *ngFor="let t of toursroutes" 
+            (click)="navegarADetalle(t)">  
+      <!-- <div class="size" style="background-image: url(fondo.jpg)">  
+        <img class="imagen" [src]="t.fotos" alt="Imágen Tour">
+      </div>  -->
+        <img class="card-img-top" [src]="t.fotos" alt="Imágen Tour">
+        <div class="card-body">
+          <h4 class="card-title">{{t.titulo}}</h4>
+          <!-- <p class="card-text">{{t.des_corta}}</p> -->
+          <!-- <a href="#" class="btn btn-primary">CAMBIAR ESTE BOTON</a> -->
+        </div>
+      </div>
   </div>
-  
-
-
-
-
-
-
-
-  <!-- <div class="item">
-    <div class="image">
-      <img src="/images/wireframe/image.png">
-    </div>
-    <div class="content">
-      <a class="header">Header</a>
-      <div class="meta">
-        <span>Description</span>
-      </div>
-      <div class="description">
-        <p></p>
-      </div>
-      <div class="extra">
-        Additional Details
-      </div>
-    </div>
-  </div> -->
+  </div>
+</div>

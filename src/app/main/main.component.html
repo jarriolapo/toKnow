@@ -1,33 +1,81 @@
-<div class="jumbotron jumbotron-fluid">
+<!--Jumbotron-->
+        <div class="view full-page-intro mb-0"  style="background-image: url(../../assets/torino.jpg); background-repeat: no-repeat; background-size: cover;max-width:100%;  height: 800PX;">
+            <div class="text-primary-color text-left rgba-stylish-strong py-5 px-4">
+                <!-- <div class="box"> -->
+
+                    <!--Content-->
+                    <!-- Mask & flexbox options-->
+                    <br>
+                    <br>
+                    <br>
+    <div class="mask  rgba-black-light d-flex justify-content-center align-items-center  ">
+
+        <!-- Content -->
+        <div class="container">
+  
+          <!--Grid row-->
+          <!-- <div class="row wow fadeIn"> -->
+  
+            <!--Grid column-->
+            <div class="col-md-8  third-text-color   text-left text-md-left">
+                        <h6 class="font-bold">Descubre más que una ciudad</h6>
+                        <h1 class="display-1 pt-0 mb-0 font-weight-bold">Follow your host</h1>
+                        <p class="px-0 pb-0">¿Qué ciudad quieres conocer?</p>
+                        <form 
+                        #busquedaTour="ngForm"
+                        (ngSubmit)="onSubmit(busquedaTour.value)">
+                            <input class="form-control form-control-lg col-7" type="text" name="ciudad" placeholder="Prueba con Madrid" ngModel/>
+                            <br>
+                            <select class="form-control form-control-lg col-7 " name="categoria"  ngModel="none">
+                                <option value="none">¿Cómo te gustaría conocerla?</option>
+                                <option value="A pie">A pie</option>
+                                <option value="segway">Segway</option>
+                                <option value="tuktuk">Tuk-Tuk</option>
+                            </select>
+                            <br>
+                            <button 
+                            class="form-control form-control-lg col-7"
+                            type="submit"
+                            [disabled]="!busquedaTour.form.valid"><a>Buscar</a></button>
+                            <!-- <button class="buscar" name="vamos"><a [routerLink]="['/resultado-busqueda']">Buscar</a></button> -->
+                            </form>
+                        </div>
+                        <!--Grid column-->
+              
+                      </div>
+                      <!--Grid row-->
+              
+                    </div>
+                    <!-- Content -->
+              
+                  </div>
+                  <!-- Mask & flexbox options-->
+                    <!--Content-->
+
+                <!-- </div> -->
+            </div>
+        <!-- </div> -->
+<!--Jumbotron-->
+
+<!-- <div class="jumbotron jumbotron-fluid">
     <div class="bg-translucido">
         <div class="container">
             <p class="lead">Descrube más que una ciudad</p>
             <h1 class="display-4">FOLLOW THE HOST</h1>
-            <!-- <a href="#" type="button" class="btn btn-light">TAKE A LOOK</a> -->
+            <form >
             <input class="ciudad" type="text" name="city" placeholder="¿Que ciudad vas a conocer?">
             <br>
-            <!-- <div class="ui right action left icon input">
-                <i class="search icon"></i>
-                <input type="text" placeholder="¿Cómo la quieres conocer?">
-                <div class="ui basic floating dropdown button">
-                  <div class="text">A pie</div>
-                  <i class="dropdown icon"></i>
-                  <div class="menu">
-                    <div class="item">En Segway</div>
-                    <div class="item">En Tuk-tuk</div>
-                  </div>
-                </div>
-              </div> -->
             <select class="como" name="how" id="">
-                <option value="como" selected>¿Cómo la quieres concocer?</option>
+                <option value="como" selected>¿Cómo la quieres conocer?</option>
                 <option value="apie">A pie</option>
                 <option value="segway">Segway</option>
                 <option value="tuktuk">Tuk-Tuk</option>
             </select>
             <br>
             <button class="buscar" name="vamos"><a [routerLink]="['/resultado-busqueda']">Buscar</a></button>
+            </form>
            
 
         </div>
     </div>
-</div>
+</div> -->

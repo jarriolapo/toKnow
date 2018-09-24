@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ToursroutesService } from '../toursroutes.service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 
 
@@ -13,13 +13,18 @@ export class ResultadoBusquedaComponent implements OnInit {
 
   toursroutes: any[]
 
-  constructor(private toursroutesService: ToursroutesService, private router: Router) { }
+  constructor(private toursroutesService: ToursroutesService, private router: Router, private activatedRoute: ActivatedRoute, private toursService: ToursroutesService) {
+    
+  }
 
   ngOnInit() {
-    this.toursroutesService.getAllToursroutes()
-      .then((response) => {
-        this.toursroutes = response.json()
-        console.log(this.toursroutes)
+    this.activatedRoute.params.subscribe(params => {
+      console.log(params)
+      this.toursroutesService.postBusquedaTour(params.ciudad, params.categoria)
+        .then(response => {
+          this.toursroutes = response.json()
+          console.log(this.toursroutes)
+        })
     })
   }
 
@@ -60,10 +65,4 @@ export class ResultadoBusquedaComponent implements OnInit {
 //       console.log(response)
 //     })
 //   }
-      
 //   }
-
-  
-
-
-

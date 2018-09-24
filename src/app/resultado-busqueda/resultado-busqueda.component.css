@@ -1,8 +1,8 @@
-@import "~bootstrap/dist/css/bootstrap.css";
+/* @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
-@import url(https://fonts.googleapis.com/css?family=Cardo|Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Cardo|Montserrat); */
 
-*{
+/* *{
     display: inline-block !important;
     margin: 0 auto;
 }
@@ -10,4 +10,15 @@
 .item{
     border: 1px solid gray !important;
 
+} */
+
+.size{
+    width: 286px;
+    height: 180px;
+}
+
+.imagen{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }

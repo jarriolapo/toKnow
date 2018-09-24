@@ -1,3 +1,106 @@
-<p>
-  fichatour works!
-</p>
+<!-- <h1>FICHATOUR FUNCIONA</h1> -->
+<!-- <div class="card mb-3">
+  <img class="card-img-top" [src]="tourDetalle.fotos" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{tourDetalle.titulo}}</h5>
+    <p class="card-text">{{tourDetalle.des_larga}}</p>
+    <p class="card-text"><small class="text-muted">Tour organizado por {{tourDetalle.fk_idguia}}</small></p>
+  </div>
+</div> -->
+<br>
+<br>
+<br>
+<!-- Page Content -->
+
+
+
+
+
+<div class="container">
+    <div class="p-3 mb-2 bg-light text-dark">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      ¿Cual es el precio? Todos los tours que aparecen en to Know son basados en propinas. La reserva es completamente gratuita.</div>
+
+    <div class="row">
+
+
+
+      <div class="col-lg-9">
+          <h2 class="my-4">Follow a tu Host personal en {{tourDetalle?.titulo}}</h2>
+        <div class="card mt-4">
+          <img class="card-img-top img-fluid" [src]="tourDetalle?.fotos" alt="">
+          <div class="card-body">
+            <h3 class="card-title">{{tourDetalle?.titulo}}</h3>
+            <!-- <h4>FREE TOURS</h4> -->
+            <p class="card-text">{{tourDetalle?.des_larga}}</p>
+            <hr>
+            <h6>Tiempo de duración:</h6>
+            <p class="card-text">{{tourDetalle?.duracion}}</p>
+            <hr>
+            <h6 class="card-text">Grupo de {{tourDetalle?.max_personas}} personas máximo.</h6>
+            <hr>
+            <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+            4.0 stars
+            <p class="card-text"><small class="text-muted">Tour organizado por {{tourDetalle?.fk_idguia}}</small></p>
+          </div>
+        </div>
+        <!-- /.card -->
+
+        <div></div>
+
+        <div class="card card-outline-secondary my-4">
+            <div class="card-header">
+              Punto de encuentro
+            </div>
+            <div class="card-body">
+              <p>{{tourDetalle?.direccion}}</p>
+              <hr>
+                <img src="../../../src/assets/map.png" class="img-fluid" width="780px" height="auto" alt="">
+            </div>
+          </div>
+          <!-- /.card -->
+
+
+
+        <div class="card card-outline-secondary my-4">
+          <div class="card-header">
+            Opinión de otros viajeros
+          </div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+            <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+            <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+            <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+            <hr>
+            <a href="#" class="btn btn-success">Leave a Review</a>
+          </div>
+        </div>
+        <!-- /.card -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+      <div class="col-lg-3">
+          <h2 class="my-4">Horarios</h2>
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Jueves, 25 de septiembre 
+                11:00</a>
+            <a href="#" class="list-group-item">
+                Viernes, 26 de septiembre 
+                11:00</a>
+            <a href="#" class="list-group-item">Sábado, 27 de septiembre 
+                11:00</a>
+          </div>
+          <br>
+          <button type="button" class="btn btn-success">Ver más fechas disponibles</button>
+        </div>
+        <!-- /.col-lg-3 -->
+
+    </div>
+
+  </div>
+  <!-- /.container -->

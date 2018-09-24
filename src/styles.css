@@ -1,3 +1,26 @@
-@import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
-@import url(https://fonts.googleapis.com/css?family=Cardo|Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Cardo|Montserrat); 
+
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+/* .dark-primary-color    { background: #ffffff; } */
+.dark-primary-color    { background:rgba(0, 0, 0, 0.3); }
+.default-primary-color { background: #3c4142; }
+.light-primary-color   { background: #C8E6C9; }
+.text-primary-color    { color: #333; }
+.accent-color          { background: #FFC107; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.third-text-color		{color:#fff;}
+.divider-color         { border-color: #BDBDBD; }
+
+
+/* .fondoMenu{
+	background: blue;
+} */
+
+/* @import "~bootstrap/dist/css/bootstrap.css";*/

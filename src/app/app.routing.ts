@@ -18,6 +18,6 @@ export const appRoutes: Routes = [
     { path: "registroguia", component: RegistroguiaComponent },
     { path: "registroturista", component: RegistroturistaComponent },
     // { path: "listatours", component:ListatoursComponent  },
-    { path: "resultado-busqueda", component: ResultadoBusquedaComponent },
+    { path: "resultado-busqueda/:ciudad/:categoria", component: ResultadoBusquedaComponent },
     { path: 'fichatour/:id', component: FichatourComponent }
 ]

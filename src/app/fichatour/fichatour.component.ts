@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ToursroutesService} from '../toursroutes.service';
+import { ToursroutesService } from '../toursroutes.service';
+import { Tour } from '../models/tour.model'
 
 
 
@@ -12,19 +13,19 @@ import { ToursroutesService} from '../toursroutes.service';
 })
 export class FichatourComponent implements OnInit {
 
-  // detalleTour = Tour
+
+  tourDetalle: Tour
 
   constructor(private activatedRoute: ActivatedRoute,
-    private toursroutesService:ToursroutesService ) { }
+  private toursroutesService:ToursroutesService ) { }
 
   ngOnInit() {
-    // this.activatedRoute.params.subscribe((params) => {
-    //   this.toursroutesService.getTourById(params.id)
-    //     .then((tour) => {
-    //       console.log(tour)
-    //       this.detalleTour = tour
-    //    })
-    // })
+    this.activatedRoute.params.subscribe((params) => {
+      this.toursroutesService.getTourById(params.id)
+        .then((tour) => {
+          console.log(tour.json())
+          this.tourDetalle = tour.json()
+       })
+    })
   }
-
 }

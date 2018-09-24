@@ -3,11 +3,10 @@ import { NgModule } from '@angular/core';
 import { appRoutes } from './app.routing';
 import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
-import { ModalComponent } from './_directives';
-import { ModalService } from './_services';
+
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { ResultadoBusquedaComponent } from './resultado-busqueda/resultado-busqueda.component';
@@ -17,10 +16,10 @@ import { FichatourComponent } from './fichatour/fichatour.component';
 import { IniciarComponent } from './iniciar/iniciar.component';
 // import { ListatoursComponent } from './listatours/listatours.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    ModalComponent,
     MainComponent,
     ResultadoBusquedaComponent,
     RegistroturistaComponent,
@@ -34,11 +33,11 @@ import { IniciarComponent } from './iniciar/iniciar.component';
     HttpModule,
     FormsModule,
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ReactiveFormsModule
 
   ],
   providers: [
-    ModalService
   ],
   bootstrap: [AppComponent]
 })

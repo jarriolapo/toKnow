@@ -8,7 +8,6 @@ import { Router } from '@angular/router'
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  // template: `<a (click)="goToPage('registroguia')">Conviértete en</a>`
 })
 export class AppComponent {
   constructor(private router: Router) { }

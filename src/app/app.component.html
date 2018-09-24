@@ -1,68 +1,200 @@
-<header class="container-fluid bg-#44344F sticky-top">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark  bg-dark sticky-top "> -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark default-primary-color sticky-top d-flex justify-content-around ">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-#44344F">
+
+  <a class="navbar-brand" href="#">
+    <img src="../assets/img/logo_toknow_blanco.png" style="width:30px;height:auto;" alt="logo">
+  </a>
+  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+    aria-expanded="false" aria-label="Toggle navigation" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+    <div class="navbar-nav " >
+      
+      <a class="nav-item nav-link text-light nav justify-content-end" href="#" [routerLink]="['registroturista']">Regístrate</a>
+      <a class="nav-item nav-link text-light nav justify-content-end" href="#" [routerLink]="['iniciar']">Inicia sesión</a>
+    </div>
+  </div>
+</div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="../assets/img/logo_toknow_blanco_70x70px.png" alt="logo">
+          <img src="../assets/img/logo_toknow_blanco.png" style="width:30px;height:auto;" alt="logo"> to Know
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-        aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <!-- <a class="nav-item nav-link active" href="#">Home
-            <span class="sr-only">(current)</span>
-          </a> -->
-          <a class="nav-item nav-link" href="#" [routerLink]="['registroguia']">Conviértete en guía</a>
-          <a class="nav-item nav-link" href="#" [routerLink]="['registroturista']">Regístrate</a>
-          <a class="nav-item nav-link" href="#" [routerLink]="['iniciar']">Inicia sesión</a>
-          <!-- <a class="nav-item nav-link" href="#">Contact</a> -->
-        </div>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" [routerLink]="['registroturista']">Registrate
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" [routerLink]="['iniciar']">Inicia sesión</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
 
 
 
-</header>
-<div style="text-align:center">
+
+
+
+<!-- <div style="text-align:center"> -->
+<div>
   <router-outlet></router-outlet>
 </div>
 
 
 
-<footer class="container-fluid bg-dark">
-  <div class="container">
-    <ul class="rss">
-      <li class="d-inline-block pb-5 pt-5">
-        <a class="text-light" href="">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-      <li class="d-inline-block pb-5 pt-5">
-        <a class="text-light" href="">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-      <li class="d-inline-block pb-5 pt-5">
-        <a class="text-light" href="">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-      <li class="d-inline-block pb-5 pt-5">
-        <a class="text-light" href="">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-      <li class="d-inline-block pb-5 pt-5">
-        <a class="text-light" href="">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
+<!-- Footer -->
+<footer class="page-footer font-small text-light">
 
-    </ul>
+  <div style="background-color: #3c4142;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-0 mb-md-0">
+          <h6 class="mb-0">Síguenos en las redes sociales!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fa fa-facebook white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fa fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fa fa-google-plus white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fa fa-linkedin white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fa fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
   </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5 secondary-text-color" >
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Follow your host</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">De interes</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Todos los Tours</a>
+        </p>
+        <p>
+          <a href="#!">¿Cómo ser un guía?</a>
+        </p>
+        <p>
+          <a href="#!">Comiciones</a>
+        </p>
+        <p>
+          <a href="#!">Datos de privacidad</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Se un Host</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Tu cuenta</a>
+        </p>
+        <p>
+          <a href="#!">Afiliate</a>
+        </p>
+        <p>
+          <a href="#!">Mailing</a>
+        </p>
+        <p>
+          <a href="#!">Ayuda</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fa fa-home mr-3"></i> Madrid, Mad 28004, España</p>
+        <p>
+          <i class="fa fa-envelope mr-3"></i> info@toknow.com</p>
+        <p>
+          <i class="fa fa-phone mr-3"></i> +34 634 567 88</p>
+        <p>
+          <i class="fa fa-print mr-3"></i> +34 634 567 89</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="#"> Follow your Host</a>
+  </div>
+  <!-- Copyright -->
+
 </footer>
+<!-- Footer -->
 <!-- <modal id="custom-modal-1">
   <div class="modal">
       <div class="modal-body">
